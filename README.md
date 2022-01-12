@@ -7,7 +7,7 @@ The purpose of this project is to help Steve better determine which stock is the
 ## Stock Performance Results
 
 By formatting the data to highlight positive return values in green and negative return values in red, the significant differences between 2017 and 2018 are very distinct.
-We can see that the return was much more successful for most Stocks in 2017 vs 2018. We can also see that both"ENPH" and "RUN" had a positive return in both years.
+We can see that the return was much more successful for most Stocks in 2017 vs 2018. We can also see that both "ENPH" and "RUN" had a positive return in both years.
 
 ![Stock_Analysis_Outputs_2018_](https://github.com/aidan2013/stock-analysis/blob/main/Resources/Stock_Analysis_Outputs_2018_.png)
 
