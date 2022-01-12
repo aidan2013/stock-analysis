@@ -94,6 +94,13 @@ We then loop through all the rows in the indicated spreadsheet to sum the daily 
 
 These pieces of the script provide the data needed to compare the stock analysis outputs for all stocks in 2017 and 2018.
 
+```
+        Worksheets("All Stocks Analysis").Activate
+        Cells(4 + i, 1).Value = ticker
+        Cells(4 + i, 2).Value = totalVolume
+        Cells(4 + i, 3).Value = endingPrice / startingPrice - 1
+```
+
 #### **Original Script**
 
 The original scipt has a nested loop instead of two individual loops. 
@@ -127,7 +134,26 @@ The original scipt has a nested loop instead of two individual loops.
         Next j
 ```
 #### **Execution Times**
+A timer was built into the script in order to calculate the time it takes to execute the script. The start time is triggered when the year is entered into the input box.
+```
+Worksheets("All Stocks Analysis").Activate
+    
+    Dim startTime As Single
+    Dim endTime As Single
+       
+    yearValue = InputBox("What year would you like to run the analysis on?")
+    
+        startTime = Timer
+```
 
+The end timer is set to conclude when the script ends.
+
+```
+    endTime = Timer
+    MsgBox "This code ran in " & (endTime - startTime) & " seconds for the year " & (yearValue)
+
+End Sub
+```
 In comparing the execution times for the orginal and refactored scripts, we can see that the refactored script has a quicker execution.
 
 **Refactored Script Execution Time (2017)**
@@ -146,5 +172,9 @@ In comparing the execution times for the orginal and refactored scripts, we can 
 
 ![image](https://user-images.githubusercontent.com/91445591/149075144-aa06991b-8db0-4117-885e-803700f15025.png)
 
-##Summary
+## Summary
+
+In general, there are advantages and disadvantages to refactoring code. By refactoring code, you can remove redundancies and make the code faster and more efficient. This also helps to make the code easier to read and understand. Although these are great benefits, refactoring code can also lead to breaking the code which may be very time consuming to fix.
+
+In refactoring the VBA script in this project, I ran into a challenge where the script was no longer bringing in the correct data. In an effort to solve for this, I ended up making it worse and having to dig deeper into solving the error. This took up alot of time however in the end, the script execution was much faster than the original script.
 
