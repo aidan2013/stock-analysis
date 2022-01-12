@@ -174,7 +174,7 @@ In comparing the execution times for the orginal and refactored scripts, we can 
 
 ## Summary
 
-In general, there are advantages and disadvantages to refactoring code. By refactoring code, you can remove redundancies and make the code faster and more efficient. This also helps to make the code easier to read and understand. Although these are great benefits, refactoring code can also lead to breaking the code which may be very time consuming to fix.
+In general, there are advantages and disadvantages to refactoring code. By refactoring code, you can remove redundancies and make the code faster and more efficient. This also helps to make the code easier to read and understand. Although these are great benefits, refactoring code can also lead to breaking the code which may be very time consuming to fix. Depending on how large the script may be, the benefits may outweight the time spent on refactoring the script.
 
-In refactoring the VBA script in this project, I ran into a challenge where the script was no longer bringing in the correct data. In an effort to solve for this, I ended up making it worse and having to dig deeper into solving the error. This took up alot of time however in the end, the script execution was much faster than the original script.
+In refactoring the VBA script in this project, I ran into a challenge where the script was no longer bringing in the correct data. In an effort to solve for this, I ended up making it worse and having to dig deeper into solving the error. In order to solve ther error, I reviewed each piece of the code in order to make sure it all ties together, there were no spelling errors or redundancies. With a second pair of eyes from a TA, we were able to locate the errors and get the script to run successfully. This took up alot of time however in the end, the script execution was much faster than the original script.
 
